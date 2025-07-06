@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>RBN | Streaming</title>
+
+    <!-- slider stylesheet -->
+    <!-- slider stylesheet -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+    <!-- fonts style -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700&display=swap"
+        rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="hero_area">
+        <!-- header section strats -->
+        <header class="header_section">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="./images/home/logo_rbn_classic.png" alt="Logo radio" width="70">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+                            <ul class="navbar-nav">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="index.html">INICIO <span
+                                            class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html#who_section"> ¿QUIÉNES SOMOS? </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html"> BLOG </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html"> PODCASTS </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html"> DESCARGA LA APP </a>
+                                </li>
+                            </ul>
+                            <div class="user_option">
+                                <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
+                                    <button class="btn  my-2 my-sm-0 nav-search-btn" type="submit"></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- end header section -->
+
+        <section class="radio-player-section position-relative" id="radio_player_section">
+            <div class="radio-player">
+                <div class="radio-info">
+                    <h1 class="radio-title">Red Buenas Nuevas - Online</h1>
+                    <div class="radio-status" id="status">Presiona play para comenzar</div>
+                </div>
+
+                <div class="visualizer" id="visualizer">
+                    <div class="wave" style="animation-delay: 0s;"></div>
+                    <div class="wave" style="animation-delay: 0.1s;"></div>
+                    <div class="wave" style="animation-delay: 0.2s;"></div>
+                    <div class="wave" style="animation-delay: 0.3s;"></div>
+                    <div class="wave" style="animation-delay: 0.4s;"></div>
+                    <div class="wave" style="animation-delay: 0.5s;"></div>
+                    <div class="wave" style="animation-delay: 0.6s;"></div>
+                    <div class="wave" style="animation-delay: 0.7s;"></div>
+                    <div class="wave" style="animation-delay: 0.8s;"></div>
+                    <div class="wave" style="animation-delay: 0.9s;"></div>
+                    <!-- ADDED -->
+                    <div class="wave" style="animation-delay: 1.0s;"></div>
+                    <div class="wave" style="animation-delay: 1.1s;"></div>
+                    <div class="wave" style="animation-delay: 1.2s;"></div>
+                    <div class="wave" style="animation-delay: 1.3s;"></div>
+                    <div class="wave" style="animation-delay: 1.4s;"></div>
+                    <div class="wave" style="animation-delay: 1.5s;"></div>
+                    <div class="wave" style="animation-delay: 1.6s;"></div>
+                    <div class="wave" style="animation-delay: 1.7s;"></div>
+                    <div class="wave" style="animation-delay: 1.8s;"></div>
+                    <div class="wave" style="animation-delay: 1.9s;"></div>
+                    <!-- ADDED -->
+                    <div class="wave" style="animation-delay: 2.0s;"></div>
+                    <div class="wave" style="animation-delay: 2.1s;"></div>
+                    <div class="wave" style="animation-delay: 2.2s;"></div>
+                    <div class="wave" style="animation-delay: 2.3s;"></div>
+                    <div class="wave" style="animation-delay: 2.4s;"></div>
+                    <div class="wave" style="animation-delay: 2.5s;"></div>
+                    <div class="wave" style="animation-delay: 2.6s;"></div>
+                    <div class="wave" style="animation-delay: 2.7s;"></div>
+                    <div class="wave" style="animation-delay: 2.8s;"></div>
+                    <div class="wave" style="animation-delay: 2.9s;"></div>
+                </div>
+
+                <div class="controls">
+                    <button class="btn" id="playBtn" onclick="togglePlay()">
+                        ▶️
+                    </button>
+                    <button class="btn" id="stopBtn" onclick="stopRadio()">
+                        ⏹️
+                    </button>
+                </div>
+
+                <div class="volume-control">
+                    <span class="volume-icon">🔊</span>
+                    <input type="range" class="volume-slider" id="volumeSlider" min="0" max="100" value="70"
+                        oninput="changeVolume(this.value)">
+                    <span id="volumeValue">70%</span>
+                </div>
+
+                <div class="loading" id="loading" style="display: none;">Cargando...</div>
+                <div class="error" id="error" style="display: none;"></div>
+            </div>
+
+            <audio id="radioAudio" preload="none">
+                <source src="https://mediastreamm.com/8014/stream" type="audio/mpeg">
+                Tu navegador no soporta el elemento audio.
+            </audio>
+        </section>
+
+        <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+            </script>
+        <!-- owl carousel script -->
+        <script type="text/javascript">
+            $(".owl-carousel").owlCarousel({
+                loop: true,
+                margin: 0,
+                navText: [],
+                center: true,
+                autoplay: true,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 3
+                    }
+                }
+            });
+        </script>
+        <!-- end owl carousel script -->
+
+        <!-- START SCRIP PLAY ONLINE -->
+        <script>
+            const audio = document.getElementById('radioAudio');
+            const playBtn = document.getElementById('playBtn');
+            const stopBtn = document.getElementById('stopBtn');
+            const status = document.getElementById('status');
+            const loading = document.getElementById('loading');
+            const error = document.getElementById('error');
+            const volumeSlider = document.getElementById('volumeSlider');
+            const volumeValue = document.getElementById('volumeValue');
+            const visualizer = document.getElementById('visualizer');
+
+            let isPlaying = false;
+            let isLoading = false;
+
+            // Configurar volumen inicial
+            audio.volume = 0.7;
+
+            function togglePlay() {
+                if (!isPlaying && !isLoading) {
+                    playRadio();
+                } else if (isPlaying) {
+                    pauseRadio();
+                }
+            }
+
+            function playRadio() {
+                if (isLoading) return;
+
+                isLoading = true;
+                loading.style.display = 'block';
+                error.style.display = 'none';
+                status.textContent = 'Conectando...';
+                playBtn.textContent = '⏳';
+
+                audio.src = 'https://mediastreamm.com/8014/stream?' + new Date().getTime();
+                audio.load();
+
+                const playPromise = audio.play();
+
+                if (playPromise !== undefined) {
+                    playPromise
+                        .then(() => {
+                            isPlaying = true;
+                            isLoading = false;
+                            loading.style.display = 'none';
+                            status.textContent = 'Reproduciendo en vivo';
+                            playBtn.textContent = '⏸️';
+                            activateVisualizer();
+                        })
+                        .catch((err) => {
+                            console.log(err);
+                            handleError('Error al reproducir: ' + err.message);
+                        });
+                }
+            }
+
+            function pauseRadio() {
+                audio.pause();
+                isPlaying = false;
+                status.textContent = 'Pausado';
+                playBtn.textContent = '▶️';
+                deactivateVisualizer();
+            }
+
+            function stopRadio() {
+                audio.pause();
+                audio.currentTime = 0;
+                // audio.src = '';
+                isPlaying = false;
+                // status.textContent = 'Detenido';
+                status.textContent = 'Presiona play para comenzar';
+                playBtn.textContent = '▶️';
+                deactivateVisualizer();
+            }
+
+            function changeVolume(value) {
+                audio.volume = value / 100;
+                volumeValue.textContent = value + '%';
+
+                // Cambiar icono según el volumen
+                const volumeIcon = document.querySelector('.volume-icon');
+                if (value == 0) {
+                    volumeIcon.textContent = '🔇';
+                } else if (value < 50) {
+                    volumeIcon.textContent = '🔉';
+                } else {
+                    volumeIcon.textContent = '🔊';
+                }
+            }
+
+            function activateVisualizer() {
+                const waves = visualizer.querySelectorAll('.wave');
+                waves.forEach(wave => wave.classList.add('active'));
+            }
+
+            function deactivateVisualizer() {
+                const waves = visualizer.querySelectorAll('.wave');
+                waves.forEach(wave => wave.classList.remove('active'));
+            }
+
+            function handleError(message) {
+                isLoading = false;
+                isPlaying = false;
+                loading.style.display = 'none';
+                error.style.display = 'block';
+                error.textContent = message;
+                status.textContent = 'Error de conexión';
+                playBtn.textContent = '▶️';
+                deactivateVisualizer();
+            }
+
+            // Event listeners para el audio
+            audio.addEventListener('loadstart', () => {
+                console.log('Iniciando carga del stream');
+            });
+
+            audio.addEventListener('waiting', () => {
+                if (isPlaying) {
+                    status.textContent = 'Buffering...';
+                }
+            });
+
+            audio.addEventListener('playing', () => {
+                status.textContent = 'Reproduciendo en vivo';
+            });
+
+            audio.addEventListener('error', (e) => {
+                console.log(e);
+                let errorMessage = 'Error desconocido';
+
+                switch (e.target.error.code) {
+                    case e.target.error.MEDIA_ERR_ABORTED:
+                        errorMessage = 'Reproducción abortada';
+                        break;
+                    case e.target.error.MEDIA_ERR_NETWORK:
+                        errorMessage = 'Error de red';
+                        break;
+                    case e.target.error.MEDIA_ERR_DECODE:
+                        errorMessage = 'Error de decodificación';
+                        break;
+                    case e.target.error.MEDIA_ERR_SRC_NOT_SUPPORTED:
+                        errorMessage = 'Formato no soportado';
+                        break;
+                }
+
+                handleError(errorMessage);
+            });
+
+            audio.addEventListener('stalled', () => {
+                if (isPlaying) {
+                    status.textContent = 'Conexión lenta...';
+                }
+            });
+
+            // Prevenir que el audio se pause cuando cambia de pestaña
+            document.addEventListener('visibilitychange', () => {
+                if (document.hidden && isPlaying) {
+                    // Mantener reproduciendo en segundo plano
+                    audio.play().catch(() => {
+                        // Si falla, no hacer nada especial
+                    });
+                }
+            });
+
+            // Controles de teclado
+            document.addEventListener('keydown', (e) => {
+                switch (e.code) {
+                    case 'Space':
+                        e.preventDefault();
+                        togglePlay();
+                        break;
+                    case 'ArrowUp':
+                        e.preventDefault();
+                        const currentVol = Math.min(100, parseInt(volumeSlider.value) + 10);
+                        volumeSlider.value = currentVol;
+                        changeVolume(currentVol);
+                        break;
+                    case 'ArrowDown':
+                        e.preventDefault();
+                        const newVol = Math.max(0, parseInt(volumeSlider.value) - 10);
+                        volumeSlider.value = newVol;
+                        changeVolume(newVol);
+                        break;
+                }
+            });
+        </script>
+        <!-- END PLAY ONLINE -->
+</body>
+
+</html>
